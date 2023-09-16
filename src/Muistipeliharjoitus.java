@@ -14,6 +14,7 @@ public class Muistipeliharjoitus {
 		int[] answer= new int[7];		  //pelaajan arvaamien numeroiden taulukko
 		int i=0;
 		
+		
 		System.out.println("Muistipeli\n*************");
 		System.out.println("Yritä muistaa alla olevat numerot.\nNäet numerot 3 sekunnin ajan.");
 		
@@ -81,7 +82,9 @@ public class Muistipeliharjoitus {
 		
 		System.out.println("\n\nKiitos pelaamisesta!");
 		
-			
+	
+		
+		
 		
 	}
 
