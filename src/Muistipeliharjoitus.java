@@ -4,6 +4,7 @@ import java.util.Random;
 public class Muistipeliharjoitus {
 
 	public static void main(String[] args) {
+	Scanner in = new Scanner(System.in);	
 		
 		//Esitellään muistipeli ja peli arpoo sattumanvaraisesti 7 numeroa väliltä 1-5
 		
@@ -12,8 +13,10 @@ public class Muistipeliharjoitus {
 		
 		Random random = new Random();
 		int[] randomNumbers = new int[7];
+		int answer;
+		int i=0;
 		
-		for (int i=0; i<randomNumbers.length; i++)
+		for (i=0; i<randomNumbers.length; i++)
 		{
 		randomNumbers[i] = random.nextInt(5);
 		System.out.print(randomNumbers[i] + " ");
@@ -34,8 +37,19 @@ public class Muistipeliharjoitus {
 			Thread.currentThread().interrupt();
 		}
 		
-		for (int i = 0; i < 20; ++i) System.out.println();
+		for (i = 0; i < 20; ++i) 
+		System.out.println();
 		
+		
+		//Pelaaja syöttää muistamansa numerot
+		
+		for (i=0; i<7; i++)
+			
+			{
+			System.out.println("Syötä " + (i+1) + "." +  " numero:");
+			answer =Integer.parseInt(in.nextLine());
+			
+			}
 		
 		
 	}
