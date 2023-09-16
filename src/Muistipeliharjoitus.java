@@ -5,6 +5,8 @@ public class Muistipeliharjoitus {
 
 	public static void main(String[] args) {
 		
+		//Esitellään muistipeli ja peli arpoo sattumanvaraisesti 7 numeroa väliltä 1-5
+		
 		System.out.println("Muistipeli\n*************");
 		System.out.println("Yritä muistaa alla olevat numerot.\nNäet numerot 3 sekunnin ajan.");
 		
@@ -18,6 +20,24 @@ public class Muistipeliharjoitus {
 		
 		}
 		System.out.print(" (3 sekunnin jälkeen ruutu tyhjennetään)");
+		
+		//Peliin 3 sekunnin tauko
+		
+		try
+		
+		{
+			Thread.sleep(3000);
+		}	
+		
+		catch(InterruptedException ex)
+		{
+			Thread.currentThread().interrupt();
+		}
+		
+		for (int i = 0; i < 20; ++i) System.out.println();
+		
+		
+		
 	}
 
 }
